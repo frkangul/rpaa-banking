@@ -1,5 +1,33 @@
 # Improving Loan Portfolio Profitability for a Bank
 
+## Getting Started
+
+### Prerequisites
+- Python 3.11.7
+- Libraries: pandas, matplotlib, seaborn, scikit-learn, optuna, xgboost, graphviz, shap, hydra-core
+
+### Installation
+1. Clone the repository to your local machine.
+2. Install the required dependencies using Poetry:
+```bash
+git clone https://github.com/frkangul/rpaa-banking.git
+cd rpaa-banking
+pyenv install 3.11.7
+pyenv local 3.11.7
+python -m venv .venv
+source .venv/bin/activate
+poetry install
+```
+
+## Usage
+
+Run the main training script after setting configurations from the `config` dir:
+```bash
+python train.py
+```
+
+This will launch a training pipeli and create result directory with the given name via configuration files.
+
 ## Given Facts by the RPAA Team:
 
 ### Task: 
