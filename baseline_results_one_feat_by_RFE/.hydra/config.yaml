@@ -1,0 +1,51 @@
+model:
+  name: logistic_regression
+  test_size: 0.1
+  save_result_dir: ./baseline_results_one_feat_by_RFE
+  num_feats_rfe: 1
+  logistic_regression_plot_feat_n: cat_number_client_calls_from_ING
+  config:
+    penalty: l2
+    solver: lbfgs
+    max_iter: 1000
+    random_state: 12345
+exp:
+  seed: 12345
+  threshold: 0.4
+data:
+  dir: ./processed_data/final_df.csv
+  target_var: is_default
+  subset: true
+  ordinal_cat_feats:
+  - cat_number_accounts
+  - cat_number_loans_accounts
+  - cat_number_client_calls_from_ING
+  nominal_cat_feats:
+  - loan_reason
+  - gender
+  - religion
+  - employment
+  - postal_code
+  numerical_feats:
+  - age
+  - relationship_length
+  - average_salary
+  - average_current_acc_balance
+  - average_monthly_balance
+  numerical_skewed_feats:
+  - requested_amount
+  - payback_amount
+  - installment
+  - number_client_calls_to_ING
+  - average_saving_account_balance
+  - average_credit_card_balance
+  - average_debt_to_income_ratio
+  cat_feats_subset:
+  - cat_number_client_calls_from_ING
+  numerical_feats_subset:
+  - requested_amount
+  - payback_amount
+  - installment
+  - average_credit_card_balance
+  - average_debt_to_income_ratio
+  - average_salary

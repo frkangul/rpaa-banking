@@ -1,0 +1,10 @@
+name: logistic_regression
+test_size: 0.1 # Note that there is no CV in baseline.
+save_result_dir: ./baseline_results_one_feat_by_RFE
+num_feats_rfe: 1
+logistic_regression_plot_feat_n: cat_number_client_calls_from_ING
+config:
+  penalty: l2
+  solver: lbfgs
+  max_iter: 1000
+  random_state: 12345

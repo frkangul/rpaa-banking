@@ -1,0 +1,13 @@
+name: xgboost
+test_size: 0.1 # Note that CV can applied in xgboost.
+save_result_dir: ./xgboost_hyperparam_results
+config:
+  objective: binary:logistic
+  eval_metric: aucpr
+  random_state: 12345
+  n_estimators: 100
+hyperparam: true
+n_folds: 5 # Keep test set a side, and split train into k folds.
+early_stop_rounds: 50
+optuna_trials_num: 100
+cv_result_dir: ./xgboost_cv_results
