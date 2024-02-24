@@ -1,4 +1,4 @@
-cust_id,gender,religion,employment,postal_code,number_client_calls_to_ING,cat_number_client_calls_from_ING,age,relationship_length
+cust_id,gender,religion,employment,postal_code,number_client_calls_to_BANK,cat_number_client_calls_from_BANK,age,relationship_length
 0,M,U,Public Sector,20,0,0,,
 1,M,C,Private Sector,30,0,5,36.0,2.0
 2,M,C,Private Sector,20,0,0,42.0,4.0

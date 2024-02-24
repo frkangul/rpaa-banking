@@ -1,4 +1,4 @@
-cust_id,gender,religion,employment,postal_code,birth_date,joined_ING_date,number_client_calls_to_ING,number_client_calls_from_ING
+cust_id,gender,religion,employment,postal_code,birth_date,joined_BANK_date,number_client_calls_to_BANK,number_client_calls_from_BANK
 0,M,U,Public Sector,20,1985-09-01,2014-04-01,0,0
 1,M,C,Private Sector,30,1982-09-01,2015-11-01,0,6
 2,M,C,Private Sector,20,1974-04-01,2012-03-01,0,0
