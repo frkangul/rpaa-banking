@@ -42,8 +42,6 @@ This will launch a training pipeli and create result directory with the given na
 ### Assumptions
 - The loan amount can be considered lost when a default occurs.
 - For portfolio management only the first 12 installments can be considered. Delinquencies on later installments are not provided, and hence can be ignored.
-- WHAT ABOUT THE CUSTOMERS WHOM THE BANK WILL NOT LEND MONEY TO DUE TO THE MODEL, BUT WHO WOULD PAY WITHOUT DEFAULTING. IN MY OPINION, THEY SHOULD BE ALSO CONSIDERED LOST. SINCE THIS ASSUMTION IS NOT STATED IN YOUR DOCUMENT, I WILL NOT CONSIDER THIS FACT FOR MY ANALYSIS. 
-
 
 ## My Strategy
 
@@ -58,7 +56,7 @@ The primary goal is to predict the probability of a loan becoming default within
 
 - **loan_data.csv**: Analyze the distribution of loan reasons, terms, requested amounts, and customer account numbers. Check for missing values and outliers.
 
-- **customer_data.csv**: Examine customer demographics and their relationship with ING. Convert `birth_date` and `joined_ING_date` to age and length of relationship with the bank.
+- **customer_data.csv**: Examine customer demographics and their relationship with the bank. Convert `birth_date` and `joined_BANK_date` to age and length of relationship with the bank.
 
 - **customer_financials.csv**: Calculate average salary, current account balance, saving account balance, and credit card balance for each customer over the provided period.
 
@@ -137,9 +135,9 @@ Information about the customer, extracted from the database in January 2020:
 - `employment`: employment sector for the customer
 - `postal_code`: first two digits of the postal code, where the second is always set to 0
 - `birth_date`: month and year of birth of the customer
-- `joined_ING_date`: month and year when the customer became an ING client
-- `number_client_calls_to_ING`: total number of times the customer has reached ING by phone
-- `number_client_calls_from_ING`: number of times the customer has been contacted by phone by ING
+- `joined_BANK_date`: month and year when the customer became a BANK client
+- `number_client_calls_to_BANK`: total number of times the customer has reached BANK by phone
+- `number_client_calls_from_BANK`: number of times the customer has been contacted by phone by BANK
 
 ### customer_financials.csv
 
