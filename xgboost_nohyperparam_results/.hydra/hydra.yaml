@@ -129,18 +129,18 @@ hydra:
   runtime:
     version: 1.3.2
     version_base: '1.3'
-    cwd: /Users/furkangul/Documents/rpaa-recruiting-case-furkan
+    cwd: /Users/furkangul/Documents/rpaa-banking
     config_sources:
     - path: hydra.conf
       schema: pkg
       provider: hydra
-    - path: /Users/furkangul/Documents/rpaa-recruiting-case-furkan/config
+    - path: /Users/furkangul/Documents/rpaa-banking/config
       schema: file
       provider: main
     - path: ''
       schema: structured
       provider: schema
-    output_dir: /Users/furkangul/Documents/rpaa-recruiting-case-furkan/xgboost_nohyperparam_results
+    output_dir: /Users/furkangul/Documents/rpaa-banking/xgboost_nohyperparam_results
     choices:
       model: xgboost
       hydra/env: default

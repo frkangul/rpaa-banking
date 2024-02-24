@@ -22,7 +22,7 @@ data:
   ordinal_cat_feats:
   - cat_number_accounts
   - cat_number_loans_accounts
-  - cat_number_client_calls_from_ING
+  - cat_number_client_calls_from_BANK
   nominal_cat_feats:
   - loan_reason
   - gender
@@ -39,12 +39,12 @@ data:
   - requested_amount
   - payback_amount
   - installment
-  - number_client_calls_to_ING
+  - number_client_calls_to_BANK
   - average_saving_account_balance
   - average_credit_card_balance
   - average_debt_to_income_ratio
   cat_feats_subset:
-  - cat_number_client_calls_from_ING
+  - cat_number_client_calls_from_BANK
   numerical_feats_subset:
   - payback_amount
   - average_debt_to_income_ratio
